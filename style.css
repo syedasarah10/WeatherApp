@@ -1,0 +1,35 @@
+body{
+    background-image: url(img/bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+  }
+  .container{
+    align-items: center;
+    max-width: 400px;
+  }
+  
+    #Search{
+        color: rgb(31, 3, 63);
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: inline-block;
+        border: 2px solid;
+        text-transform: uppercase;
+        
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
