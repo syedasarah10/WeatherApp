@@ -1,6 +1,4 @@
-const key = config.API_KEY;
-
-console.log(process.env);
+const key = API_KEY;
 
 export const getWeather = async(id) => {
     const url = 'http://dataservice.accuweather.com/currentconditions/v1/';
