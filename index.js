@@ -24,13 +24,13 @@ const updateUI = (data) => {
 
 
 
-          let timeSrc = null;
+          let imageBasedOnTimeofDay = null;
           if(weather.IsDayTime){
-              timeSrc = 'img/day.svg';
+            imageBasedOnTimeofDay = 'img/day.svg';
           } else {
-              timeSrc = 'img/night.svg';
+            imageBasedOnTimeofDay = 'img/night.svg';
           }
-          time.setAttribute('src',timeSrc);
+          time.setAttribute('src',imageBasedOnTimeofDay);
 
 
           if(card.classList.contains('d-none')){
@@ -49,7 +49,7 @@ const updateCity = async (city) => {
 
 };
 
-const a = cityForm.addEventListener('submit', e => {
+    cityForm.addEventListener('submit', e => {
     e.preventDefault();
 
 
@@ -59,3 +59,5 @@ const a = cityForm.addEventListener('submit', e => {
     .then(data => updateUI(data))
     .catch(err => console.log(err));
 });
+
+
