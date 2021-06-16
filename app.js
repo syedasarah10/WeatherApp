@@ -1,4 +1,4 @@
-const key = API_KEY;
+import WEATHER_API_KEY from "./apikey.js";
 
 export const getWeather = async(id) => {
     const url = 'http://dataservice.accuweather.com/currentconditions/v1/';
